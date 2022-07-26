@@ -1,4 +1,4 @@
-from setuptools import setup  
+from setuptools import setup, find_packages()
 from typing import List 
 
 
@@ -8,7 +8,7 @@ PROJECT_NAME="housing_predictor"
 VERSION="0.0.1"
 AUTHOR="Pawan Arya"
 DESRCIPTION="This is a first FSDS Nov batch Machine Learning Project" 
-PACKAGES = ['housing'] 
+
 
 REQUIREMENT_FILE_NAME="requirements.txt"
 
@@ -31,7 +31,7 @@ name=PROJECT_NAME,
 version=VERSION,
 author=AUTHOR,
 description=DESRCIPTION,
-packages=PACKAGES, 
+packages=find_packages(), 
 install_requires=get_requirements_list()
 )
     
